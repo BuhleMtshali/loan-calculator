@@ -26,13 +26,25 @@ h1 {
 }
 label {
   display: block;
-  font-size: 18px;
+  font-size: 20px;
   padding: 8px;
+}
+#text {
+  font-size: 20px;
 }
 input {
   padding: 10px 15px;
   border-radius: 8px;
   border: none;
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--btn-color);
+}
+#output-amount {
+  color: #780000;
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--btn-color);
 }
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
