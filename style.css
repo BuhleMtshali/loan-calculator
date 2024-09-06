@@ -1,0 +1,10 @@
+:root {
+  --body-bg: #344e41;
+  --text-color: #dad7cd;
+  --border: #3a5a40;
+  --btn-color: #780000;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
