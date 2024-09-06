@@ -13,3 +13,12 @@ function calculateNow() {
     (interest + parseFloat(loanAmount.value)) / monthsElement.value;
   outputElement.textContent = totalAmount;
 }
+
+//clear function
+clearAllElement.addEventListener("click", clearAll);
+function clearAll() {
+  loanAmount.value = "";
+  interestRate.value = "";
+  monthsElement.value = "";
+  outputElement.textContent = "";
+}
