@@ -7,4 +7,13 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: var(--text-color);
+}
+.container {
+  background-color: var(--body-bg);
+  width: 600px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  color: var(--text-color);
 }
