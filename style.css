@@ -8,12 +8,51 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--text-color);
+  text-align: center;
 }
 .container {
   background-color: var(--body-bg);
-  width: 600px;
+  width: 400px;
+  margin: 20px auto;
   text-align: center;
   display: block;
-  margin: 0 auto;
   color: var(--text-color);
+  border-radius: 10px;
+  padding: 20px;
+}
+h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+label {
+  display: block;
+  font-size: 18px;
+  padding: 8px;
+}
+input {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+*:focus {
+  outline: none;
+}
+button {
+  font-size: 18px;
+  padding: 8px;
+  border-radius: 8px;
+  color: var(--text-color);
+  background-color: var(--btn-color);
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--text-color);
+  color: var(--btn-color);
+  border: 2px solid var(--btn-color);
+  transition: all ease-in-out 0.2s;
 }
