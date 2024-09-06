@@ -9,9 +9,10 @@ let clearAllElement = document.getElementById("clear-all");
 buttonElement.addEventListener("click", calculateNow);
 function calculateNow() {
   let interest = (interestRate.value / 100) * loanAmount.value;
-  let totalAmount =
-    (interest + parseFloat(loanAmount.value)) / monthsElement.value;
-  outputElement.textContent = totalAmount;
+  let totalAmount = Math.round(
+    (interest + parseFloat(loanAmount.value)) / monthsElement.value
+  );
+  outputElement.textContent = `R${totalAmount}`;
 }
 
 //clear function

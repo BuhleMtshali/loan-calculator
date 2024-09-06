@@ -25,6 +25,10 @@ i {
   border-radius: 10px;
   padding: 20px;
 }
+#output-amount {
+  font-size: 18px;
+  color: #780000;
+}
 h1 {
   margin-top: 10px;
   margin-bottom: 10px;
