@@ -8,11 +8,15 @@ let clearAllElement = document.getElementById("clear-all");
 //calculate function
 buttonElement.addEventListener("click", calculateNow);
 function calculateNow() {
-  let interest = (interestRate.value / 100) * loanAmount.value;
-  let totalAmount = Math.round(
-    (interest + parseFloat(loanAmount.value)) / monthsElement.value
-  );
-  outputElement.textContent = `R${totalAmount}`;
+  if (loanAmount.value || interestRate.value || monthsElement.value) {
+    let interest = (interestRate.value / 100) * loanAmount.value;
+    let totalAmount = Math.round(
+      (interest + parseFloat(loanAmount.value)) / monthsElement.value
+    );
+    outputElement.textContent = `R${totalAmount}`;
+  } else {
+    alert("Please Enter All The Input Fields");
+  }
 }
 
 //clear function
