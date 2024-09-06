@@ -68,3 +68,13 @@ button:hover {
   border: 2px solid var(--btn-color);
   transition: all ease-in-out 0.2s;
 }
+#clear-all {
+  display: block;
+  text-decoration: underline;
+  margin-top: 5px;
+  cursor: pointer;
+}
+#clear-all:hover {
+  color: var(--btn-color);
+  transition: all ease-in-out 0.2s;
+}
